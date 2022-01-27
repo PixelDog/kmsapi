@@ -32,7 +32,8 @@ SETUP
    define('DB', 'db_kms');
 
 3) Note: this needs to be setup as root, it is not configured yet to run in a
-   a subdirectory (that's an @todo);
+   a subdirectory (that's an @todo). If running locally, you will need to set up
+   a virtual host and edt /etc/hosts as needed.
 
 
 -------------------------------------------------------------------
