@@ -34,6 +34,13 @@ class TickersbydateModel
       );
     }
 
+    $replacements = "ss";
+
+    $tickers = explode(",", $_GET['tickers']);
+    $inClause = "'" . implode ( "', '", $tickers ) . "'";
+
+    $replacements = $types . $replacements;
+
     $query = "
       SELECT
         c.name,
@@ -47,11 +54,12 @@ class TickersbydateModel
       JOIN
         historical h on c.company_id = h.company_id
       WHERE
-        c.ticker in (?)
+        c.ticker in ($inClause)
       AND
-        h.d BETWEEN ? AND ?;
+        h.d BETWEEN ? AND ?
+      GROUP BY h.d, c.name, c.ticker, h.high, h.low, h.close;
     ";
 
-    return $this->db->dbQuery($query, "sss", [$_GET['tickers'], $_GET['dateFrom'], $_GET['dateTo']]);
+    return $this->db->dbQuery($query, "ss", [$_GET['dateFrom'], $_GET['dateTo']]);
   }
 }

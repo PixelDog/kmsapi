@@ -47,6 +47,7 @@ class Database
       if ($this->conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       }
+      $this->dbquery("SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''))");
     }
 
     /*
@@ -70,6 +71,8 @@ class Database
       }
 
       $statement = $this->conn->prepare($query);
+
+      // print_r($this->conn->error_list);
 
       $statement->bind_param($types, ...$subs);
 
