@@ -57,3 +57,5 @@ http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickers
 
 Tickers by date:
 http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickersbydate?dateFrom=2000-01-26&dateTo=2020-01-26&tickers=WMT
+
+Tickers by date #2: http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickersbydate?dateFrom=2017-01-26&dateTo=2020-01-26&tickers=WMT,AMZN
