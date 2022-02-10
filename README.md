@@ -1,6 +1,6 @@
 Welcome to the KMS API.
 This is a simple API created using an MVC approach.
-Using an MVC approach, this API can be set up wih endless endpoints.
+Using an MVC approach, this API can be set up with endless endpoints.
 
 -------------------------------------------------------------------
 REQUIRED
