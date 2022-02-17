@@ -12,7 +12,7 @@ SETUP
 -------------------------------------------------------------------
 1) Clone the repo to your host.
 
-2) When you begin creting your own API for your needs, edit Config/_config.php with the appropriate values for your environment.
+2) When you begin creating your own API for your needs, edit Config/_config.php with the appropriate values for your environment.
    Values are as follows (with examples):
 
    // host
@@ -36,7 +36,7 @@ SETUP
    a virtual host and edt /etc/hosts as needed if running locally.
 
 4) Note #2: The DB is set up for a sample I created for a company using sample credentials. It is very valid,
-   but when you are creating your own database, models, views, and controllers, you need to provide a database in 
+   but when you are creating your own database, models, views, and controllers, you need to provide a database and cedentials in 
    Config/_config.php.
 
 
