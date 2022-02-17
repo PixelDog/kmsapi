@@ -12,7 +12,7 @@ SETUP
 -------------------------------------------------------------------
 1) Clone the repo to your host.
 
-2) Edit Config/_config.php with the appropriate values for your environment.
+2) When you begin creting your own API for your needs, edit Config/_config.php with the appropriate values for your environment.
    Values are as follows (with examples):
 
    // host
