@@ -33,7 +33,7 @@ SETUP
 
 3) Note: this needs to be setup as root, it is not configured yet to run in a
    a subdirectory (that's an @todo). If running locally, you will need to set up
-   a virtual host and edt /etc/hosts as needed if running locally.
+   a virtual host and edit /etc/hosts as needed if running locally.
 
 4) Note #2: The DB is set up for a sample I created for a company using sample credentials. It is very valid,
    but when you are creating your own database, models, views, and controllers, you need to provide a database and cedentials in 
