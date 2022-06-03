@@ -50,16 +50,3 @@ will handle the routing for any new endpoints. Also, have a
 look at the queries in the sample models so you can get an
 idea of how to use the Database class. The Database class
 will do all of your substitutions for binding parameters.
-
-Sample endpoints for the sample models, views, and controllers:
-
-The home page:
-http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/
-
-Show all tickers:
-http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickers
-
-Tickers by date:
-http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickersbydate?dateFrom=2000-01-26&dateTo=2020-01-26&tickers=WMT
-
-Tickers by date #2: http://kmsapi-env.eba-2vcvsmcm.us-west-1.elasticbeanstalk.com/tickersbydate?dateFrom=2017-01-26&dateTo=2020-01-26&tickers=WMT,AMZN
